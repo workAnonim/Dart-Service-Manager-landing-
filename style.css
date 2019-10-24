@@ -7,7 +7,7 @@ body{
 header{
     background-image: url("./images/back.png");
     width: 100%;
-    height: 70vh;
+    height: 470px;
 }
 
 #header-content{
@@ -107,4 +107,120 @@ li a {
 
 .video_frame{
     border-radius: 3px;
+}
+
+.easy_title{
+    color: #061e37;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.easy_text{
+    color: #b0bec5;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.text1{
+    font-size: 20px;
+}
+
+.text2{
+    margin: 0 auto;
+    font-size: 15p;
+    padding-top: 5px;
+    width: 500px;
+}
+
+.titles{
+    padding-top: 50px;
+    display: flex; 
+    justify-content: center;
+}
+
+.titlesEvent{
+    width: 30%;
+    min-width: 350px;
+    text-align: center;
+}
+
+.eventPic{
+    font-size: 70px;
+}
+
+.eventTitle{
+    padding-top: 5px;
+    color: #061e37;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.eventText{
+    padding-top: 5px;
+    color: #061e37;
+    font-size: 15px;
+}
+
+.icofont-tasks-alt{
+    color: #b388ff;
+}
+
+.icofont-team{
+    color: #80d8ff;
+}
+
+.icofont-worker{
+    color: #ea80fc;
+}
+
+.button_get_started{
+    width: 100px;
+    font-size: 12px;
+    color: aliceblue;
+    border: 1px solid #1de9b6;
+    background-color: #1de9b6;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 15px auto 0 auto;
+}
+
+.row_item{
+    width: 25%;
+    padding-top: 50px;
+}
+
+.horizontal_line{
+    margin-top: 50px;
+    height: 120px;
+    display: flex;
+}
+
+.hor_left{
+    background-color: #80d8ff;
+}
+
+.hor_l_center{
+    background-color: #82b1ff;
+}
+
+.hor_r_center{
+    background-color: #b388ff;
+}
+
+.hor_right{
+    background-color: #ea80fc;
+}
+
+.item{
+    display: inline;	/* Располагаем элементы по горизонтали */
+    list-style: none;	/* Убираем маркеры списка */
+}
+
+.item>li{
+    margin-right: 0;
+    text-align: left;
 }
