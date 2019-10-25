@@ -33,11 +33,16 @@ header{
     display: inline-flex; 
 }
 
-a {
+.menu a {
+    text-decoration: none;
+}
+
+.header-buttons a {
     text-decoration: none;
 }
 
 .sign-up{
+    text-decoration: none;
     display: inline-flex; 
     width: 80px;
     justify-content: center;
@@ -48,23 +53,34 @@ a {
     padding-bottom: 5px;
 }
 
-ul{
+.menu ul{
     list-style: none;
     margin: 0;
     padding-left: 0;
 }
 
-li{
+.header-buttons ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu li{
     float: left;
     margin-right: 30px;
 }
 
-li a {
-    color: aliceblue;
+.header-buttons li{
+    float: left;
+    margin-right: 30px;
 }
 
-.active_menu{
-    color: #061e37;
+.active_menu {
+    color: #061e37 !important;
+}
+
+.menu li a {
+    color: aliceblue;
 }
 
 .header-content_mid{
@@ -97,19 +113,25 @@ li a {
 
 .header_b1 {
     background-color: #061e37;
-    color: white;
 }
 
 .header_b2 {
     background-color: white;
-    color: #061e37;
+}
+
+.head_b1_a{
+    color: white !important;
+}
+
+.head_b2_a{
+    color: #061e37 !important;
 }
 
 .video_frame{
     border-radius: 3px;
 }
 
-.easy_title{
+.block_title{
     color: #061e37;
     text-align: center;
     padding-top: 50px;
@@ -190,7 +212,7 @@ li a {
 
 .row_item{
     width: 25%;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 .horizontal_line{
@@ -215,12 +237,95 @@ li a {
     background-color: #ea80fc;
 }
 
-.item{
-    display: inline;	/* Располагаем элементы по горизонтали */
+ul.item{
+    text-align: center;
+    padding: 0;
+}
+
+ul.item > li{
+    display: inline-block;	/* Располагаем элементы по горизонтали */
     list-style: none;	/* Убираем маркеры списка */
 }
 
-.item>li{
-    margin-right: 0;
+.oval-block{
+    text-align: center;
+    background-color:white;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.hor_text{
     text-align: left;
+}
+
+.contacts{
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.contacts_form{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts_form > *{
+    margin-top: 20px;
+}
+
+.contacts_form input[type=text]{
+    color: #061e37;
+	width: 260px;
+	font-size: 13px;
+	border: 1px solid #061e37;
+	background: #F6F6f6;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.contacts_form button{
+    width: 100px;
+    background-color: #1de9b6;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+.contacts_form input[type=checkbox] {
+    color: #061e37;
+	width: 15px;
+	font-size: 13px;
+	border: 1px solid #061e37;
+	background: #F6F6f6;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 40px;
+    }
+    
+
+.contacts_form textarea {
+	/* = Убираем скролл */
+	overflow: auto;
+	/* = Убираем увеличение */
+	resize: none;
+	width: 588px;
+	height: 150px;
+
+	/* = Добавим фон, рамку, отступ*/
+	background: #f6f6f6;
+	border: 1px solid #061e37;
+	border-radius: 5px;
+	padding: 8px 0 8px 10px;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #061e37;
+    height: 250px;
 }
